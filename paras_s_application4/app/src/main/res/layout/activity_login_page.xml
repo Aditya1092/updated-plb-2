@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginPageVM" type="com.parassapplication.app.modules.loginpage.data.viewmodel.LoginPageVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnflexilogoone"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_57pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearLoginPage"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <ImageView android:id="@+id/imageFLEXILOGOOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_102pxh"
+                android:layout_marginEnd="@dimen/_90pxh"
+                android:layout_marginStart="@dimen/_90pxh"
+                android:layout_width="@dimen/_162pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_flexilogo1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_flexilogo1"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtLOGIN"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_54pxh"
+                android:layout_marginStart="@dimen/_54pxh"
+                android:layout_marginTop="@dimen/_67pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{loginPageVM.loginPageModel.txtLOGIN}"
+                style="@style/txtSFProDisplaybold17" tools:text="@string/lbl_login"/>
+
+            <EditText
+                android:id="@+id/etGroupTwelve"
+                style="@style/txtSFProDisplayregular16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_43pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_marginEnd="@dimen/_43pxh"
+                android:ellipsize="end"
+                android:hint="@string/lbl_email"
+                android:inputType="textEmailAddress"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_14pxv"
+                android:singleLine="true"
+                android:textColorHint="@color/gray_600"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/txtEnterpassword"
+                style="@style/txtSFProDisplayregular16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="49.21dp"
+                android:layout_marginTop="24.71dp"
+                android:layout_marginEnd="49.21dp"
+                android:ellipsize="end"
+                android:hint="@string/lbl_password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/gray_600" />
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtForgetpassword"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_64pxh"
+                android:layout_marginStart="@dimen/_64pxh"
+                android:layout_marginTop="@dimen/_35pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{loginPageVM.loginPageModel.txtForgetpassword}"
+                style="@style/txtSFProDisplayregular14" tools:text="@string/msg_forget_password"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnLoginOne"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_40pxv"
+                android:layout_marginEnd="@dimen/_53pxh"
+                android:layout_marginStart="@dimen/_53pxh"
+                android:layout_marginTop="@dimen/_35pxv"
+                android:layout_width="@dimen/_212pxh"
+                android:paddingBottom="@dimen/_12pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_12pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_login"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_login"/>
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStackconfirmation"
+                android:layout_height="@dimen/_478pxv"
+                android:layout_marginTop="@dimen/_56pxv" android:layout_width="match_parent">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtConfirmation"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_86pxh"
+                    android:layout_marginStart="@dimen/_86pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{loginPageVM.loginPageModel.txtConfirmation}"
+                    style="@style/txtSFProDisplayregular14_1" tools:text="@string/msg_don_t_have_an_a"/>
+                <ImageView android:id="@+id/imagePolygonOne"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_261pxh"
+                    android:layout_marginBottom="@dimen/_71pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_71pxv"
+                    android:layout_width="@dimen/_117pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_polygon1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_polygon1"/>
+                <FrameLayout android:id="@+id/frameStackpolygonthree"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_465pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_257pxh">
+
+                    <ImageView
+                        android:id="@+id/imagePolygonThree"
+                        imageRes="@{@drawable/img_polygon3}"
+                        android:layout_width="92dp"
+                        android:layout_height="157dp"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_polygon3" />
+
+                    <ImageView
+                        android:id="@+id/imagePolygonTwo"
+                        android:layout_width="148dp"
+                        android:layout_height="95dp"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_marginEnd="@dimen/_7pxh"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_polygon2"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_polygon2" />
+                </FrameLayout>
+                <ImageView android:id="@+id/imagePolygonFive"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_203pxh"
+                    android:layout_marginBottom="@dimen/_100pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_100pxv"
+                    android:layout_width="@dimen/_102pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_polygon5}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_polygon5"/>
+                <ImageView android:id="@+id/imagePolygonFour"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_246pxh"
+                    android:layout_marginBottom="@dimen/_111pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_111pxv"
+                    android:layout_width="@dimen/_110pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_polygon4}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_polygon4"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSignUp"
+                    android:layout_gravity="top|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_83pxh"
+                    android:layout_marginStart="@dimen/_83pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{loginPageVM.loginPageModel.txtSignUp}"
+                    style="@style/txtSFProDisplayregular14_2" tools:text="@string/lbl_sign_up"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

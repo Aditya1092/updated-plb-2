@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cameraVM" type="com.parassapplication.app.modules.camera.data.viewmodel.CameraVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameCamera"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageFLEXILOGOFive"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_61pxh"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="@dimen/_108pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_flexilogo1_61x108}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_flexilogo1_61x108"/>
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start video"
+            android:onClick="startVideo"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="100dp"/>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "489897821011",
+    "project_id": "paras-s-application4-32839",
+    "storage_bucket": "paras-s-application4-32839.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489897821011:android:9743cc68cda9ca732557a6",
+        "android_client_info": {
+          "package_name": "com.parassapplication.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489897821011-eiqjlenqkcbm0ie3jqfffosvpgk2eiui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvGWoN7dZCw1fYg_bgdwJ5bC-eI8inAno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489897821011-eiqjlenqkcbm0ie3jqfffosvpgk2eiui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

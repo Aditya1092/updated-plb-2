@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signUpVM" type="com.parassapplication.app.modules.signup.data.viewmodel.SignUpVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnflexilogoone"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_16pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+        <LinearLayout
+            android:id="@+id/linearSignUp"
+            style="@style/groupStylewhite_A700"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageFLEXILOGOOne"
+                android:layout_width="@dimen/_94pxh"
+                android:layout_height="76dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_flexilogo1"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_flexilogo1" />
+
+            <FrameLayout
+                android:id="@+id/frameStacklaptop"
+                android:layout_width="@dimen/_49pxh"
+                android:layout_height="@dimen/_42pxv"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/_156pxh"
+                android:layout_marginTop="@dimen/_56pxv"
+                android:layout_marginEnd="@dimen/_156pxh">
+
+                <ImageView
+                    android:id="@+id/imageLaptop"
+                    android:layout_width="@dimen/_49pxh"
+                    android:layout_height="@dimen/_42pxh"
+                    android:layout_gravity="start"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_laptop"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_laptop" />
+
+                <LinearLayout
+                    android:id="@+id/linearColumnellipsethree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_6pxh"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/viewEllipseThree"
+                        android:layout_width="@dimen/_15pxh"
+                        android:layout_height="@dimen/_13pxh"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:background="@drawable/rectangle_bg_red_a701_radius_7_5" />
+
+                    <View
+                        android:id="@+id/viewEllipseOne"
+                        android:layout_width="@dimen/_37pxh"
+                        android:layout_height="@dimen/_21pxv"
+                        android:layout_gravity="start"
+                        android:background="@drawable/rectangle_bg_red_a701_radius_18_5" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtSignUp"
+                style="@style/txtSFProDisplaybold17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/_147pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_marginEnd="@dimen/_147pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{signUpVM.signUpModel.txtSignUp}"
+                tools:text="@string/lbl_sign_up" />
+
+
+            <EditText
+                android:id="@+id/txtEnteryourFull"
+                style="@style/txtSFProDisplayregular12"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_75pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_75pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:hint="Enter your Full Name"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/gray_600"/>
+
+            <EditText
+                android:id="@+id/txtEnteryourEmai"
+                style="@style/txtSFProDisplayregular12"
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_74pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_marginEnd="@dimen/_74pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:hint="@string/msg_enter_your_emai"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/gray_600"/>
+
+            <EditText
+                android:id="@+id/txtEnterpassword"
+                style="@style/txtSFProDisplayregular12"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_75pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_marginEnd="@dimen/_75pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:hint="@string/lbl_password"
+                android:inputType="text"
+                android:textColorHint="@color/gray_600"/>
+
+            <EditText
+                android:id="@+id/txtConfirmpasswor"
+                style="@style/txtSFProDisplayregular12"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_75pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_marginEnd="@dimen/_75pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/gray_600"
+                tools:ignore="Autofill"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignUpOne"
+                style="@style/btnSolidRounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_74pxh"
+                android:layout_marginTop="@dimen/_50pxv"
+                android:layout_marginEnd="@dimen/_74pxh"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_sign_up"
+                android:textAllCaps="false"
+                tools:text="@string/lbl_sign_up" />
+
+            <TextView
+                android:id="@+id/txtAbout"
+                style="@style/txtSFProDisplayregular12_1"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/_166pxh"
+                android:layout_marginTop="@dimen/_36pxv"
+                android:layout_marginEnd="@dimen/_166pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{signUpVM.signUpModel.txtAbout}"
+                tools:text="@string/lbl_about" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollHorizontalscrollellipseeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_185pxv"
+                android:fillViewport="true"
+                android:gravity="start"
+                android:scrollbars="none">
+
+                <FrameLayout
+                    android:id="@+id/frameStackellipseeight"
+                    android:layout_width="@dimen/_382pxh"
+                    android:layout_height="@dimen/_103pxv">
+
+                    <View
+                        android:id="@+id/viewEllipseEight"
+                        android:layout_width="@dimen/_94pxh"
+                        android:layout_height="@dimen/_98pxh"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginStart="@dimen/_67pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_67pxh"
+                        android:background="@drawable/rectangle_bg_gray_900_radius_49_18" />
+
+                    <View
+                        android:id="@+id/viewEllipseSix"
+                        android:layout_width="@dimen/_94pxh"
+                        android:layout_height="@dimen/_98pxh"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginStart="@dimen/_112pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_112pxh"
+                        android:background="@drawable/rectangle_bg_gray_900_radius_49_18" />
+
+                    <View
+                        android:id="@+id/viewEllipseFive"
+                        android:layout_width="@dimen/_94pxh"
+                        android:layout_height="@dimen/_98pxh"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginStart="@dimen/_57pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_57pxh"
+                        android:background="@drawable/rectangle_bg_red_a700_radius_49_18" />
+
+                    <View
+                        android:id="@+id/viewEllipseSeven"
+                        android:layout_width="@dimen/_94pxh"
+                        android:layout_height="@dimen/_98pxh"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginStart="@dimen/_125pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_125pxh"
+                        android:background="@drawable/rectangle_bg_red_a700_radius_49_18" />
+
+                    <View
+                        android:id="@+id/viewEllipseNine"
+                        android:layout_width="@dimen/_94pxh"
+                        android:layout_height="@dimen/_98pxh"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_13pxh"
+                        android:background="@drawable/rectangle_bg_red_a700_radius_49_18" />
+
+                    <ImageView
+                        android:id="@+id/imageEllipseFour"
+                        imageRes="@{@drawable/img_ellipse4}"
+                        android:layout_width="@dimen/_94pxh"
+                        android:layout_height="@dimen/_98pxh"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_ellipse4" />
+
+                    <ImageView
+                        android:id="@+id/imageEllipseTen"
+                        imageRes="@{@drawable/img_ellipse10}"
+                        android:layout_width="@dimen/_95pxh"
+                        android:layout_height="@dimen/_99pxh"
+                        android:layout_gravity="top|end"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_ellipse10" />
+                </FrameLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

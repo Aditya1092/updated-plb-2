@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="aboutVM" type="com.parassapplication.app.modules.about.data.viewmodel.AboutVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnpolygoneleven"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearAbout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <FrameLayout android:id="@+id/frameStackpolygoneleven"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_329pxv"
+                android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_292pxh">
+                <ImageView android:id="@+id/imagePolygonEleven"
+                    android:layout_gravity="top|center"
+                    android:layout_height="@dimen/_138pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_width="@dimen/_260pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_polygon11}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_polygon11"/>
+                <ImageView android:id="@+id/imagePolygonThirteen"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_149pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_161pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_polygon11}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_polygon11"/>
+                <FrameLayout android:id="@+id/frameStackpolygonfourteen"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_288pxv"
+                    android:layout_marginBottom="@dimen/_10pxv" android:layout_width="@dimen/_292pxh">
+                    <ImageView android:id="@+id/imagePolygonFourteen"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_288pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_polygon14}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_polygon14"/>
+                    <LinearLayout
+                        android:id="@+id/linearColumnpolygonfifteen"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content" android:orientation="vertical">
+                        <ImageView android:id="@+id/imagePolygonFifteen"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_136pxh"
+                            android:layout_width="@dimen/_130pxh"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_polygon11}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_polygon11"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtABOUT"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_86pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{aboutVM.aboutModel.txtABOUT}"
+                            style="@style/txtSFProDisplaybold16_1" tools:text="@string/lbl_about2"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <ImageView android:id="@+id/imageFLEXILOGOFour"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_61pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_108pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_flexilogo1_61x108}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_flexilogo1_61x108"/>
+            </FrameLayout>
+            <TextView android:id="@+id/txtDescription"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="wrap_content"
+                android:text="@{aboutVM.aboutModel.txtDescription}"
+                style="@style/txtSFProDisplaybold16_1" tools:text="@string/msg_team_members"/>
+            <FrameLayout android:id="@+id/frameStackpolygonelevenOne"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_339pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_109pxv" android:layout_width="@dimen/_260pxh">
+                <ImageView android:id="@+id/imagePolygonElevenOne"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_144pxh"
+                    android:layout_marginBottom="@dimen/_25pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_25pxv"
+                    android:layout_width="@dimen/_143pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_polygon11_red_a723}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_polygon11_red_a723"/>
+                <FrameLayout android:id="@+id/frameStackpolygontwelve"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_339pxv" android:layout_width="@dimen/_260pxh">
+                    <ImageView android:id="@+id/imagePolygonTwelve"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_159pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_polygon7}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_polygon7"/>
+                    <ImageView android:id="@+id/imagePolygonThirteenOne"
+                        android:layout_gravity="top|end"
+                        android:layout_height="@dimen/_165pxh"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_62pxv"
+                        android:layout_width="@dimen/_167pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_polygon6}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_polygon6"/>
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

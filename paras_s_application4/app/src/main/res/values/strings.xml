@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">paras_s_application4</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_email">Email</string>
+<string name="msg_download_attend">Download Attendance</string>
+<string name="msg_forget_password">Forget password?</string>
+<string name="msg_don_t_have_an_a">Don\u2019t have an account?   </string>
+<string name="lbl_download">Download </string>
+<string name="msg_confirm_passwor">Confirm password</string>
+<string name="lbl_about">About</string>
+<string name="lbl_take_attendance">Take Attendance</string>
+<string name="lbl_about2">ABOUT</string>
+<string name="lbl_login">LOGIN</string>
+<string name="msg_enter_your_full">Enter your Full Name</string>
+<string name="msg_confirm_new_pas">Confirm New Password</string>
+<string name="lbl_enter_otp">Enter OTP</string>
+<string name="msg_click_to_get_ot">Click to Get OTP</string>
+<string name="msg_team_members">Team Members
+
+
+Prasanna Kulkarni
+
+Paras Angral
+
+Aditya Godghate
+
+Kishan Patel</string>
+<string name="lbl_up">Up</string>
+<string name="msg_enter_your_emai">Enter your Email Address</string>
+<string name="lbl_sign_up">Sign Up</string>
+<string name="lbl_password">Password</string>
+<string name="lbl_take">Take </string>
+<string name="lbl_attendance">Attendance</string>
+<string name="msg_enter_new_passw">Enter New Password</string>
+<string name="msg_enter_mobile_no">Enter mobile no.</string>
+<string name="lbl_submit">Submit</string>
+<string name="lbl_enter_password">Enter password</string>
+<string name="lbl_sign">Sign </string>
+</resources>
