@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:orientation="vertical" style="@style/groupStylewhite_A700">
         <LinearLayout android:id="@+id/linearHomePage"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="vertical" style="@style/groupStylewhite_A700">
 
@@ -21,7 +21,7 @@
             <TextView
                 android:ellipsize="end"
                 android:gravity="center_horizontal"
-                android:id="@+id/txtGroupNine"
+                android:id="@+id/txtGroupNin"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_10pxh"
                 android:layout_marginStart="@dimen/_10pxh"
@@ -32,7 +32,7 @@
                 android:paddingTop="@dimen/_23pxv"
                 android:singleLine="true"
 
-                android:text="@{homePageVM.homePageModel.txtGroupNine}"
+
                 style="@style/txtSolidRounded" tools:text="@string/lbl_take_attendance"/>
             <FrameLayout android:gravity="start"
                 android:id="@+id/frameStackdownloadattend"

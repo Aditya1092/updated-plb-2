@@ -40,7 +40,6 @@ class LoginPageActivity : BaseActivity<ActivityLoginPageBinding>(R.layout.activi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityLoginPageBinding.inflate(layoutInflater)
       setContentView(binding.root)
       binding.txtSignUp.setOnClickListener {
         startActivity(Intent(this, SignUpActivity::class.java))

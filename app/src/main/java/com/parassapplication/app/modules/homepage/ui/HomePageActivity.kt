@@ -19,7 +19,11 @@ class HomePageActivity : BaseActivity<ActivityHomePageBinding>(R.layout.activity
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_home_page)
+
+    binding.txtGroupNin.setOnClickListener {
+      val destIntent = CameraActivity.getIntent(this, null)
+      startActivity(destIntent)
+    }
   }
 
 
@@ -31,7 +35,7 @@ class HomePageActivity : BaseActivity<ActivityHomePageBinding>(R.layout.activity
   }
 
   override fun setUpClicks(): Unit {
-    binding.txtGroupNine.setOnClickListener {
+    binding.txtGroupNin.setOnClickListener {
       val destIntent = CameraActivity.getIntent(this, null)
       startActivity(destIntent)
     }
